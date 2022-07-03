@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icon for website -->
+    <!--<link rel="apple-touch-icon" sizes="180x180" href="./assets/logo/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/logo/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/logo/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/logo/favicon/site.webmanifest">-->
+
+    <title>Mana Paatashala | Home</title>
+
+    <!-- Linking Fontawesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <!-- Linking Flickity -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+
+    <!-- >>>Change the header bg and add the gif remove the text -->
+    <header>
+        <div class="banner"></div>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <!-- >>>Change Home with the logo -->
+            <a href="#">
+                
+            </a>
+            <a class="menu-btn" href="#">College Reviews</a>
+            <a class="menu-btn" href="#">Courses</a>
+            <a class="menu-btn" href="#">Study Material</a>
+            <a class="menu-btn" href="#">Practice Problems</a>
+            <a class="menu-btn flex-align-left" href="payment_form.html">Login to Subscribe</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2><span>Courses</span></h2>
+            <!-- Courses Carousel -->
+            <div class="carousel js-flickity" data-flickity='{"wrapAround": true }'>
+                <div class="carousel-cell"><video src="assets/courses/webdev/lectures/Min and Max of array elements.mp4"
+                        poster="assets/courses/webdev/thumbnail/webdev.png" controls></video></div>
+                <div class="carousel-cell"><video src="assets/courses/chemistry/lectures/electrochemistry.mp4"
+                        poster="assets/courses/chemistry/thumbnail/program.png" controls></video>
+                </div>
+                <div class="carousel-cell"><video src="assets/courses/maths/lectures/maths.mp4"
+                        poster="assets/courses/maths/thumbnail/js.png" controls></video></div>
+                <div class="carousel-cell"><video src="assets/courses/python/lectures/python-lec1.mp4"
+                        poster="assets/courses/python/thumbnail/python.png" controls></video></div>
+                <div class="carousel-cell"><video src="assets/courses/cpp/lectures/cpp.mp4"
+                        poster="assets/courses/cpp/thumbnail/cpp.jpg" controls></video></div>
+            </div>
+        </section>
+        <section>
+            <h2><span>College Reviews</span></h2>
+            <!-- College Review Caraousel -->
+            <div class="carousel js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div class="carousel-cell iframe-container"><iframe src="assets/courses/python/lectures/iiith.png"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="carousel-cell iframe-container"><iframe src="assets/courses/python/lectures/ou.png"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></div>
+                <div class="carousel-cell iframe-container"><iframe src="assets/courses/python/lectures/jntu.png"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></div>
+                <div class="carousel-cell iframe-container"><iframe src="assets/courses/python/lectures/cbit.png"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></div>
+
+            </div>
+        </section>
+        <section class="study_material">
+            <h2><span>Study Material</span></h2>
+            <!-- Notes Carousel -->
+            <div class="carousel js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div class="carousel-cell">
+                    <a target="_blank" href="assets/courses/chemistry/notes/basicprogramming.pdf"><img
+                            class="img-responsive"
+                            src="assets/courses/chemistry/notes/basic.png"></a>
+                </div>
+                <div class="carousel-cell">
+                    <a target="_blank"
+                        href="assets/courses/chemistry/notes/c.pdf"><img
+                            class="img-responsive"
+                            src="assets/courses/chemistry/notes/c img.jpg" alt=""></a>
+                </div>
+                <div class="carousel-cell">
+                    <a target="" href="assets/courses/chemistry/notes/python.pdf"><img
+                            class="img-responsive"
+                            src="assets/courses/chemistry/notes/python.png"></a>
+                </div>
+                <div class="carousel-cell">
+                    <a target="_blank" href="assets/notes/webdev.pdf"><img class="img-responsive"
+                            src="assets/courses/chemistry/notes/webdev.png"></a>
+                </div>
+        </section>
+        <section class="our_founder">
+            <h2><span>Our Founder</span></h2>
+            
+            <li style="margin-left:42%;"><a href="#"><img class="profile_img" src="assets/logo/logo-vybu .jpeg" alt="This is vybu bukka"></a></li>
+            <h3 class="profile_name">vybhavi bukka</h3>
+            <div class="sm-handle">
+                <a class="yt_handle" href="#" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-youtube fa-lg"></i>YouTube</a>
+                <a class="linkdn_handle" href="http://www.linkedin.com/in/bukka-vybhavi-025427204/" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-linkedin fa-lg"></i>LinkedIn</a>
+                <a class="insta_handle" href="http://www.instagram.com/vybu_bukka" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-instagram fa-lg"></i>Instagram</a>
+            </div>
+
+            <div class="about_us">
+                <h4 class="about_title">Young mind and #1 student | Founder of Mana Paatashala
+                    with
+                    2.5 k young
+                    hustlers. </h4>
+                <h5 class="about_content">I help students across India find their right career path. 
+                    and I believe that everyone has the right to quality education and with the help of my social media
+                    platforms, I have helped thousands of students find their path to success in the last 2 years. In the
+                    next few decades, India will rise
+                    as the leader of the world with the maximum young workforce, but for this, we need some good pilots
+                    who
+                    can take us through this. I help these young hustlers find their true potential so that they can fly
+                    us
+                    to victory.</h5>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#">FAQ</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Refund Policy</a>
+        <a href="#" class="flex-align-left">&copy; 2022 | Mana Paatashala</a>
+    </footer>
+    <!-- Flickity JS files -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+
+</html>

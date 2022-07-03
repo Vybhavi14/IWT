@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      
+    <script>
+      function validation(){
+        let y;
+        y=document.getElementById("email").value;
+        var x= /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9]+(\.(com|co\.in|co\.uk)*)$/;                     
+        if (y.match(x)){
+            alert("Valid Email.")
+        }
+        else{ alert("Invalid Email")};
+        // var y=/(^[a-zA-Z]+[0-9]+).{8,}$/
+        // if(pass.match(y)){
+        //     alert("Valid Password.")
+        // }
+        // else{alert("Invalid Password")}
+        
+      }
+      function ran(){
+        document.getElementById("adhar").remove();
+        document.getElementById("butt").remove();
+       
+      }
+        function con(){
+            let text = "Do you want to submit?\nEither Ok or Cancel.";
+  if (confirm(text) == true) {
+    alert("Your response has been submited");
+  } else {
+    alert("You canceled!");
+  }
+}
+function color(){
+  document.getElementById("name").style.background="yellow";
+}
+function pay(){
+  document.getElementById("name").style.background="aqua"; 
+  
+}
+function onfocus(){
+  document.getElementById("but").style.button.background="violet";
+}
+    </script>
+   
+    <title>SignUp form</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <style>
+      .button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.button1 {
+  background-color:red; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+      html, body {
+      min-height: 100%;
+      padding: 0;
+      margin: 0;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px;
+      color: #666;
+      }
+      h1 {
+      margin: 0 0 20px;
+      font-weight: 400;
+      color: #1c87c9;
+      }
+      p {
+      margin: 0 0 5px;
+      }
+      
+      form {
+      padding: 25px;
+      margin: 25px;
+      box-shadow: 0 2px 5px #f5f5f5; 
+      background: #f5f5f5; 
+      }
+
+      input, textarea {
+      width: calc(100% - 18px);
+      padding: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #1c87c9;
+      outline: none;
+      }
+      
+    
+         
+      
+      .left-part, form {
+      width: 50%;
+      margin-left: 25%;
+      }
+      
+     
+    </style>
+  </head>
+  <body>
+      
+    <form action="">
+        <h1 >Payment Form</h1>
+        <p>Required Fileds are followed by *</p>
+    </div>
+    <div>   
+        <h2>Contact Information</h2>
+        <p>Name: * <input type="text" name="name" id="name" onmouseenter="pay()" onmouseout="color()" placeholder="Enter Your Name" required></p>
+    <div>   <fieldset>
+            <legend>Gender * </legend>
+            <h2>
+                Male <input type="radio" name="gender" id="male" required> Female <input type="radio" name="gender" id="female" required>
+            </h2>
+        </fieldset>
+    </div>     
+        <p>Address: <textarea name="address" id="address" cols="100" rows="8" placeholder="Enter Your Address"></textarea></p>
+        <p>Email: * <input type="text" name="email" id="email"  onblur="validation()" placeholder="Enter Your Mail address" required></p>
+        <!-- <button onclick="validation()">validation</button> -->
+        <p>Pincode: * <input type="number" name="pincode" id="pincode" required></p>
+        <h2>Payment Information</h2>
+        <p>Card Type: *
+            <select name="card_type" id="card_type" required>
+                <option value="">--Select a Card Type--</option>
+                <option value="visa">Visa</option>
+                <option value="rupay">Rupay</option>
+                <option value="mastercard">MasterCard</option>
+            </select>
+        </p>
+        <p>
+            Card Number * <input type="number" name="card_number" id="card_number" required>
+        </p>
+        <p>
+            Expiration Date: * <input type="date" name="exp_date" id="exp_date" required>
+        </p>
+        <p>CVV * <input type="password" name="cvv" id="cvv" required></p>
+        <p>
+          AADHAAR
+        <input type="text" placeholder="Enter Your Aadhaar Number" name="AADHAAR" id="adhar"> 
+        </p>
+        <!-- <p>
+          PAN
+        <input type="text"  name="PAN" id="PAN" placeholder="Enter Your Pan Number "></p> -->
+        <input type="submit" class="button" value="Pay Now" id="but" onclick="con()" onmouseover="onfocus()" >
+        
+    </form>
+    </div>
+    
+  </body>
+</html>
+<!-- /^[a-zA-Z]+[\.-]+\w*\W*@\w*\W*\.(com|co\.in|co\.uk)$/; -->
+<!-- <button id="butt" class="button1" onclick="ran()">remove</button> -->
